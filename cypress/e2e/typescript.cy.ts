@@ -7,11 +7,22 @@ it('google test', function(){
        .type('google')
        .type('{enter}')
        cy.get('.g > :nth-child(1) > [lang="en"] > .kvH3mc > .jGGQ5e > .yuRUbf > a > .LC20lb').click()
-       
+
     // // cy.contains('Documentation').type('{enter}')
     // cy.get('.dmenKe > .cIkxbf > .usJj9c > h3 > .l',{timeout:5000}).click()
+    
 
+})
 
+it.only('login test', function(){
+
+    cy.visit('https://trytestingthis.netlify.app/')
+    cy.get('#uname').type('test')
+    cy.get('#pwd').type('test')
+    cy.get('[type="submit"]').click()
+
+  
 
     
 })
+
